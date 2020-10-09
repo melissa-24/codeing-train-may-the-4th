@@ -56,3 +56,11 @@ export function myText() {
     ]
     return funText
 }
+
+export function altText() {
+    const newText = [
+        'This is just a test',
+        'I hope that this too works'
+    ]
+    return newText
+}
