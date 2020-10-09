@@ -1,5 +1,5 @@
 import React from 'react'
-// import { myText } from './components/text'
+import { myText } from './components/text'
 
 import Scrolling from './components/Scrolling'
 
@@ -11,7 +11,7 @@ class App extends React.Component {
       <>
       <h2>Coding Train's May the 4th Coding Challenge - React Web Dev Style</h2>
       {/* <div className='text'>{myText().map(sentence => <p>{sentence}</p>)}</div> */}
-      <Scrolling myText='Melissa, Taking the Internet by storm' />
+      <Scrolling myText={myText().map(sentence => <p>{sentence}</p>)} />
       </>
     )
   }
