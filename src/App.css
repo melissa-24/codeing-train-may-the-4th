@@ -1,8 +1,8 @@
 body {
-  background-color: darkblue;
+  background-color: black;
 }
 #main {
-  color: white;
+  color: yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
