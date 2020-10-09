@@ -1,42 +1,18 @@
 body {
-  background-color: black;
+  background-color: darkslateblue;
 }
 #main {
-  color: yellow;
+  color: lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  font-size: 2em;
-  align-items: center;
-  justify-content: center;
-  width: 600px;
-  /* overflow: hidden; */
-  transform:  perspective(400px)
-              /*translateY(10px)
-              translateX(-30px) */
-              /* rotateZ(3deg) */
-              /*skewY(5deg)
-              skewX(-10deg);*/
-
-}
-
-h2 {
-  background-color: darkblue;
-  padding: 1em;
 }
 
 .scene {
-  width: 500px;
-  height: 400px;
-  margin: 10px;
-  perspective: 600px;
-  /* border: 2px solid red; */
+  width: 200px;
+  height: 200px;
+  perspective: 400px;
 }
 
 .cube {
@@ -44,28 +20,73 @@ h2 {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-40px);
+  transform: translateZ(-100px);
   transition: transform 1s;
-  /* border: 2px solid black; */
-
 }
 
 .face {
   position: absolute;
   width: 200px;
-  height: 400px;
+  height: 200px;
+  border: 2px solid black;
   line-height: 200px;
   font-size: 40px;
   font-weight: bold;
   color: white;
   text-align: center;
 }
-.face--scroll {
-  /* background: #ff0000b3; */
-  transform:  rotateZ(5deg)
-              rotateY(-12deg)
-              rotateX(55deg)
-              translateZ(100px)
-              translateY(50px)
-              translateX(50px);
+/* 
+axis rotate y = look -left and +right x = look +up and -down z =  turn -left and +right
+axis translate y = move -up and +down x =  move -left and +right z = move +front and -back
+ */
+
+/* 
+Front start at rotateY 0deg translateZ 100px
+ */
+.face--front {
+  background: #a8b6ddb3;
+  transform: rotateY(-20deg) rotateX(-20deg) rotateZ(0deg) 
+    translateY(50px) translateX(0px) translateZ(50px);
+}
+/* 
+Right start at rotateYn90 and translateZ 100px
+ */
+.face--right {
+  background: #77ce86b3;
+  transform: rotateY(70deg) rotateX(0deg) rotateZ(-20deg) 
+    translateY(50px) translateX(50px) translateZ(100px);
+}
+/* 
+Back starts at rotateY 180deg and translateZ 100px
+ */
+.face--back {
+  background: #b16874b3;
+  transform: rotateY(160deg) rotateX(20deg) rotateZ(0deg)
+    translateY(50px) translateX(0px) translateZ(150px);
+}
+/* 
+Left starts at rotateY -90deg translateZ 100px
+ */
+.face--left {
+  background: #e2c394b3;
+  transform: rotateY(-110deg) rotateX(0deg) rotateZ(20deg)
+    translateY(50px) translateX(-50px) translateZ(100px);
+}
+/* 
+Top starts at rotateX 90deg translateZ 100px
+ */
+.face--top {
+  background: #b37295b3;
+  transform: rotateY(-20deg) rotateX( 70deg) rotateZ(0deg)
+    translateY(-50px)  translateZ(50px);
+}
+/* 
+Bottom axis rotate y = look -left and +right x = look +up and -down z =  turn -left and +right
+Bottom axis translate y = move -up and +down x =  move -left and +right z = move +front and -back
+Bottom starts at rotateX -90deg translateZ 100px
+ */
+.face--bottom {
+  background: #dad875b3;
+  transform: rotateY(-20deg) rotateX(-110deg) rotateZ(0deg)
+    translateY(50px)  translateZ(150px);
 }

@@ -1,21 +1,21 @@
 import React from 'react'
-import { myText } from './components/text'
-
-import Scrolling from './components/Scrolling'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import './App.css'
+import Cube from './components/Cube'
+// import MayThe4th from './components/version1/MayThe4th'
 
 class App extends React.Component {
   render() {
     return (
       <>
-      <div className='scene'>
-        <div className='cube'>
-          <div className=' face face--scroll'>
-            <Scrolling myText={myText().map(sentence => <p>{sentence}</p>)} />
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={Cube} />
+          {/* <Route path='/version-1' component={MayThe4th} /> */}
+          {/* <Route path='/version-2' component={VersionFun} /> */}
+        </Switch>
+      </BrowserRouter>
       </>
     )
   }

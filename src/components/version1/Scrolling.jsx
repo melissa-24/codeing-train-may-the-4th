@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
 
-// import { myText } from './text'
 
-const Scrolling = ({ myText }) => {
+const Scrolling = ({ starWars }) => {
     const [key, setKey] = useState(1)
 
     const scroll = useSpring({
@@ -18,7 +17,7 @@ const Scrolling = ({ myText }) => {
 
     return (
         <div key={key} className='text'>
-            <animated.div style={scroll}>{myText}</animated.div>
+            <animated.div style={scroll}>{starWars}</animated.div>
         </div>
     )
 }
