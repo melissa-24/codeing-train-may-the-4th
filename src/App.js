@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-      <h2>May the 4th</h2>
+      <h2>Coding Train's May the 4th Coding Challenge - React Web Dev Style</h2>
       {/* <div className='text'>{myText().map(sentence => <p>{sentence}</p>)}</div> */}
       <Scrolling myText='Melissa, Taking the Internet by storm' />
       </>
