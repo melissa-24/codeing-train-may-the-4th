@@ -7,8 +7,8 @@ const Scrolling = ({ myText }) => {
     const [key, setKey] = useState(1)
 
     const scroll = useSpring({
-        from: { transform: "translate(-10px, 600px)", opacity: '100%', color: '#fff', 'letter-spacing': '4px', 'z-index': '0', 'font-size': '60px', rotate: '-360deg'},
-        to: { transform: 'translate(0, -5px)', opacity: '75%', color: '#ccc', 'letter-spacing': '-3px', 'z-index': '-1000', 'font-size': '20px', rotate: '360deg'},
+        from: { transform: "translate(-10px, 600px)", opacity: '100%', color: '#fff', 'letter-spacing': '4px', 'z-index': '0', 'font-size': '60px', rotate: '0deg'},
+        to: { transform: 'translate(0, -5px)', opacity: '75%', color: '#ccc', 'letter-spacing': '-3px', 'z-index': '-1000', 'font-size': '20px', rotate: '5deg'},
         config: { duration: 9000 },
         reset: true,
         onRest: () => {
