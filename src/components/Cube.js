@@ -10,6 +10,7 @@ class Cube extends React.Component {
                     <Link to='/version-1'>May The 4th Scrawler</Link>
                     <Link to='/version-2'>Fun Version</Link>
                     <Link to='/my-version'>My Crawler</Link>
+                    <Link to='/version-3'>More Fun</Link>
                 </nav>
                 <div className='thescene'>
                     <div className='thecube'>
