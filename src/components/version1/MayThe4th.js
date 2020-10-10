@@ -12,6 +12,7 @@ class MayThe4th extends React.Component {
           <h1>Coding Train's May the 4th Challenge</h1>
           <nav>
               <Link to='/'>Main Page</Link>
+              <Link to='/version-2'>Fun Version</Link>
           </nav>
           <div className='scene'>
             <div className='cube'>

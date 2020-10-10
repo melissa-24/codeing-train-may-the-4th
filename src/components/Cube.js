@@ -8,6 +8,7 @@ class Cube extends React.Component {
                 <h1>Main page</h1>
                 <nav>
                     <Link to='/version-1'>May The 4th Scrawler</Link>
+                    <Link to='/version-2'>Fun Version</Link>
                 </nav>
                 <div className='thescene'>
                     <div className='thecube'>
