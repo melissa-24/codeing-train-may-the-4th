@@ -4,7 +4,7 @@
 Main branch live version = https://coding-train-may-the-4th.vercel.app/
 
 ## Other version
-Not live yet but a paged version where the scrolling aspect changes
+Pages branch live version = https://coding-train-may-the-4th-pages.vercel.app/
 
 1. Currently version-a and version-b branches do show other scrolling effects
 
