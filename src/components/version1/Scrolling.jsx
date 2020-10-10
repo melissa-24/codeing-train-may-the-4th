@@ -15,6 +15,7 @@ const Scrolling = ({ starWars }) => {
         }
     })
 
+
     return (
         <div key={key} className='text'>
             <animated.div style={scroll}>{starWars}</animated.div>

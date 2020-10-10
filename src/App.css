@@ -1,5 +1,5 @@
 body {
-  background-color: darkslateblue;
+  background-color: black;
 }
 #main {
   color: lightgray;
@@ -9,13 +9,31 @@ body {
   justify-content: center;
 }
 
-.scene {
+.main-page {
+  color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslateblue;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  color: white;
+}
+
+.thescene {
   width: 200px;
   height: 200px;
   perspective: 400px;
 }
 
-.cube {
+.thecube {
   width: 100%;
   height: 100%;
   position: relative;
@@ -24,7 +42,7 @@ body {
   transition: transform 1s;
 }
 
-.face {
+.theface {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -43,7 +61,7 @@ axis translate y = move -up and +down x =  move -left and +right z = move +front
 /* 
 Front start at rotateY 0deg translateZ 100px
  */
-.face--front {
+.theface--front {
   background: #a8b6ddb3;
   transform: rotateY(-20deg) rotateX(-20deg) rotateZ(0deg) 
     translateY(50px) translateX(0px) translateZ(50px);
@@ -51,7 +69,7 @@ Front start at rotateY 0deg translateZ 100px
 /* 
 Right start at rotateYn90 and translateZ 100px
  */
-.face--right {
+.theface--right {
   background: #77ce86b3;
   transform: rotateY(70deg) rotateX(0deg) rotateZ(-20deg) 
     translateY(50px) translateX(50px) translateZ(100px);
@@ -59,7 +77,7 @@ Right start at rotateYn90 and translateZ 100px
 /* 
 Back starts at rotateY 180deg and translateZ 100px
  */
-.face--back {
+.theface--back {
   background: #b16874b3;
   transform: rotateY(160deg) rotateX(20deg) rotateZ(0deg)
     translateY(50px) translateX(0px) translateZ(150px);
@@ -67,7 +85,7 @@ Back starts at rotateY 180deg and translateZ 100px
 /* 
 Left starts at rotateY -90deg translateZ 100px
  */
-.face--left {
+.theface--left {
   background: #e2c394b3;
   transform: rotateY(-110deg) rotateX(0deg) rotateZ(20deg)
     translateY(50px) translateX(-50px) translateZ(100px);
@@ -75,7 +93,7 @@ Left starts at rotateY -90deg translateZ 100px
 /* 
 Top starts at rotateX 90deg translateZ 100px
  */
-.face--top {
+.theface--top {
   background: #b37295b3;
   transform: rotateY(-20deg) rotateX( 70deg) rotateZ(0deg)
     translateY(-50px)  translateZ(50px);
@@ -85,8 +103,11 @@ Bottom axis rotate y = look -left and +right x = look +up and -down z =  turn -l
 Bottom axis translate y = move -up and +down x =  move -left and +right z = move +front and -back
 Bottom starts at rotateX -90deg translateZ 100px
  */
-.face--bottom {
+.theface--bottom {
   background: #dad875b3;
   transform: rotateY(-20deg) rotateX(-110deg) rotateZ(0deg)
     translateY(50px)  translateZ(150px);
+}
+footer {
+  margin: 10em;
 }
