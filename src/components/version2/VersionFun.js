@@ -13,6 +13,7 @@ class VersionFun extends React.Component {
           <nav>
               <Link to='/'>Main Page</Link>
               <Link to='/version-1'>May the 4th</Link>
+              <Link to='/my-version'>My Crawler</Link>
           </nav>
           <div className='scene'>
             <div className='cube'>

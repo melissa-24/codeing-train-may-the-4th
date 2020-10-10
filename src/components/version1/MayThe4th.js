@@ -13,6 +13,7 @@ class MayThe4th extends React.Component {
           <nav>
               <Link to='/'>Main Page</Link>
               <Link to='/version-2'>Fun Version</Link>
+              <Link to='/my-version'>My Crawler</Link>
           </nav>
           <div className='scene'>
             <div className='cube'>
